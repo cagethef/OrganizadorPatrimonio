@@ -1,5 +1,6 @@
 *.ods
-
+Planilhas
+*CONTROLE DE EQUIPAMENTOS
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

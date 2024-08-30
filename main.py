@@ -13,3 +13,21 @@ DOCUMENTO DE CALIBRAÇÃO COM O PATRIMONIO;
 SE TIVER TUDO CERTO COM A PLANILHA GERA PDF NA PASTA DO EQUIPAMENTO;
 -> NO EXTERNO VERIFICAR SE TEM MAIS DE UMA PAGINA NO PDF;
 """
+import flet as ft
+from app import App
+
+window_size_height = 750
+window_size_width = 700
+
+def main(page:ft.Page):
+    page.window.height = window_size_height
+    page.window.width = window_size_width
+    page.window.max_height = window_size_height+5
+    page.window.max_width = window_size_width+5
+    page.window.min_height = window_size_height-5
+    page.window.min_width = window_size_width-5
+    page.theme_mode = "dark"
+    page.title = "Pensar em um nome bala"
+    page.add(App(page=page))
+
+ft.app(main)
