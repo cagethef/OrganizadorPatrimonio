@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import datetime
 import parameters
 import os
 
@@ -26,7 +25,24 @@ def search_equipament_with_patrimony(df, patrimony: int) -> str:
 
 def search_all_patrimony_from_equip(df,equipament: str) -> list:
     """Busca todos os patrimonios da planilha. """
-    return df[df["Equipamento"]==equipament]["Número de Patrimônio"].tolist()
+    try:
+        filtered_df = df[df["Equipamento"]==equipament]["Número de Patrimônio"].tolist()
+        if filtered_df.empty:
+            df = load_worksheet(parameters.path, parameters.external_table)
+            filtered_df = df[df["Equipamento"]==equipament]["Número de Patrimônio"].tolist()
+        if not filtered_df.empty:
+            return filtered_df
+    except:
+        return False
+    
+def search_patrimony_from_equip(df, equipament: str):    
+    """ Busca cada um dos patrimonios do equipamento. """
+    patrimonios = df[df["Equipamento"] == equipament][ "Número de Patrimônio"].astype('int')
+    if patrimonios.empty:
+        df = load_worksheet(parameters.path,parameters.external_table)
+        patrimonios = df[df["Equipamento"] == equipament]["Número de Patrimônio"].astype('int')
+    for patrimonio in patrimonios:
+        yield patrimonio
     
 def search_all_patrimony(df) -> list:
     return df["Número de Patrimônio"].tolist()
@@ -51,15 +67,59 @@ def change_patrimony(text, patrimony):
 def load_calib_folder(path: str, patrimony: int):
     df = pd.read_excel(path,engine='odf')
     df["Unnamed: 0"] = df["Unnamed: 0"].apply(lambda x: change_patrimony(x,patrimony))
-    print(df)
 
+def return_line_from_patrimony(patrimony):
+    """ Retorna a linha inteira como uma lista com base no patrimonio. """
+    df = load_worksheet(parameters.path,parameters.internal_table)
+    try:
+        filtered_df = df[df['Número de Patrimônio'] == patrimony]
+        
+        if filtered_df.empty:
+            df = load_worksheet(parameters.path,parameters.external_table)
+            filtered_df = df[df['Número de Patrimônio'] == patrimony]
+        if not filtered_df.empty:
+            return filtered_df.iloc[0].tolist()
+    except:
+        return False
+    
+    
+    
 def search_pdf(path, patrimony_list):
     """ Pega a lista de patrimonios e verifica se existe pdf de todos. """
-    for number in patrimony_list:
-        pdf_name = f"{number}.pdf"
-        pdf_path = os.path.join(path,pdf_name)
-        
-        if os.path.isfile(pdf_path):
-            return "Encontrado."
+
+    pdf_name = f"{patrimony_list}.pdf"
+    pdf_path = os.path.join(path,pdf_name)
+    if os.path.isfile(pdf_path):
+        return "Encontrado."
+    else:
+        return "Não Encontrado."
+
+def total_files_in_folder(path):
+    """ Total de arquivos na pasta de calibraçao"""
+    files = os.listdir(path)
+    file_count = len(files)
+    ficha_path = os.path.join(path, parameters.ficha_pdf)
+    if os.path.isfile(ficha_path):
+        file_count = file_count - 1
+    else:
+        return False
+    # print(f"Equipamento: {equipament}")
+    # print(f"Total patrimonios: {total_numbers}")
+    # print(f"Na pasta: {file_count}")
+    return True
+
+def find_patrimony_ficha(path, patrimony):
+    """ Busca os patrimonios na ficha individual. """
+    try:
+        if patrimony == 2:
+            path = r"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\INTERNA\MULTÍMETRO"
+        if patrimony == 600:
+            path = r"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\INTERNA\ALICATE AMPERIMETRO"
+        df = pd.read_excel(path+parameters.ficha_path, engine='odf', skiprows=5)
+        filtered_df = df[df['IDENTIFICAÇÃO'] == patrimony]
+        if filtered_df.empty:
+            return print(f"Patrimonio não encontrado: {patrimony}")
         else:
-            return "Não Encontrado."
+            return None
+    except:
+        return True
