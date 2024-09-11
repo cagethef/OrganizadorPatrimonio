@@ -16,7 +16,7 @@ SE TIVER TUDO CERTO COM A PLANILHA GERA PDF NA PASTA DO EQUIPAMENTO;
 import flet as ft
 from app import App
 
-window_size_height = 750
+window_size_height = 650   
 window_size_width = 700
 
 def main(page:ft.Page):
