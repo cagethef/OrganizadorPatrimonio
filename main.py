@@ -27,7 +27,7 @@ def main(page:ft.Page):
     page.window.min_height = window_size_height-5
     page.window.min_width = window_size_width-5
     page.theme_mode = "dark"
-    page.title = "Pensar em um nome bala"
+    page.title = "Pytrimônio"
     page.add(App(page=page))
 
 ft.app(main)
