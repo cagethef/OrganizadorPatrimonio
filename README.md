@@ -13,8 +13,6 @@ O software Pytrimônio foi projetado para conferir o processo de calibração de
 4. Crie o projeto: **`npm run build`** 
 5. Inicie o projeto: **`npm start`** 
 
-## **Uso**
-
 ## **Função das abas**
 
 ## **Conferir Calibração** 
