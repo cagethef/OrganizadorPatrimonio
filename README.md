@@ -19,7 +19,7 @@ Para melhor entendimento, essa instrução pode ser visualizada no google docs c
 ## **Conferir Calibração** 
 
 1. A aba "Conferir Calibração" tem como objetivo auxiliar o usuário a identificar quais equipamentos estão ou não com seus arquivos salvos na sua respectiva pasta. Para o seu correto funcionamento é essencial a atualização correta da planilha CONTROLE DE EQUIPAMENTOS CALIBRÁVEIS.        
-   `\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\CONTROLE DE EQUIPAMENTOS CALIBRÁVEIS.ods`
+   `\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\CONTROLE DE EQUIPAMENTOS CALIBRÁVEIS.ods`                 
    1.1 **Iniciar busca de documentos**.               
       Botão de ação que inicia o conferimento dos documentos de calibração.                
       Após dar início a busca, os resultados serão mostrados pelas seguintes colunas.                 
