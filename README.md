@@ -1,4 +1,4 @@
- ## **BEM VINDO AO PYTRIMÔNIO**
+ # **BEM VINDO AO PYTRIMÔNIO**
 
 ## INTRODUÇÃO
 O software __Pytrimônio__ foi projetado para conferir o processo de calibração de equipamentos elétricos. Seu principal objetivo é minimizar erros após a calibração, garantindo precisão e eficiência no controle dos documentos. A ferramenta oferece um ambiente intuitivo e de fácil uso, contribuindo para a redução de falhas humanas.                   
@@ -16,7 +16,7 @@ Para melhor entendimento, essa instrução pode ser visualizada no google docs c
 
 ## **Função das abas**
 
-## **Conferir Calibração** 
+### **Conferir Calibração** 
 
 1. A aba "Conferir Calibração" tem como objetivo auxiliar o usuário a identificar quais equipamentos estão ou não com seus arquivos salvos na sua respectiva pasta. Para o seu correto funcionamento é essencial a atualização correta da planilha CONTROLE DE EQUIPAMENTOS CALIBRÁVEIS.        
    `\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\CONTROLE DE EQUIPAMENTOS CALIBRÁVEIS.ods`                 
@@ -31,7 +31,7 @@ Para melhor entendimento, essa instrução pode ser visualizada no google docs c
           Nesta coluna aparecerá a situação que se encontra os instrumentos, variando de __“Encontrado”__ para os instrumentos encontrados, e __“Não Encontrado”__ para os instrumentos não encontrados.                                           
   1.2 **Filtros**                      
           Há três possíveis filtros sendo eles: Ver todos os equipamentos, ver apenas os equipamentos encontrados, ver apenas equipamentos não encontrados.                                     
-## **Busca de Instrumentos**                    
+### **Busca de Instrumentos**                    
 2. **Busca de Instrumentos**                        
    Essa aba consiste na busca de informações básicas do instrumento de acordo com o patrimônio digitado pelo usuário. Ele busca todas as informações da planilha __CONTROLE DE EQUIPAMENTOS CALIBRÁVEIS__ sem precisar abrir.                      
 ## **Informações adicionais**              
@@ -60,12 +60,12 @@ As pastas verificadas são:
 	"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\EXTERNO\DIP TESTER"
 
 Dentro dessas pastas são verificadas a pasta ATUAL e a FICHA DE CONTROLE DE INSTRUMENTOS.
- # **IMPORTANTE**
+
+  > [!WARNING]
   O programa __NÃO__ verifica o que está nos pdf 's, portanto, é função do gestor conferir e assinar eletronicamente.
   A planilha  __CONTROLE DE EQUIPAMENTOS CALIBRÁVEIS__ deve sempre estar atualizada com as informações certas, pois é de lá que as informações são retiradas.
   É importante antes de iniciar uma calibração mover as calibrações anteriores para __DESATUALIZADO__ com uma pasta do ano corrente.
-
-Esse programa é feito para auxiliar na verificação de documentos. A responsabilidade da calibração, verificação e a assinatura é de responsabilidade do gestor definido no PO-GDS02.
+  Esse programa é feito para auxiliar na verificação de documentos. A responsabilidade da calibração, verificação e a assinatura é de responsabilidade do gestor definido no PO-GDS02.
 
 
      
