@@ -1,7 +1,8 @@
  ## **BEM VINDO AO PYTRIMÔNIO**
 
 ## INTRODUÇÃO
-O software Pytrimônio foi projetado para conferir o processo de calibração de equipamentos elétricos. Seu principal objetivo é minimizar erros após a calibração, garantindo precisão e eficiência no controle dos documentos. A ferramenta oferece um ambiente intuitivo e de fácil uso, contribuindo para a redução de falhas humanas.
+O software Pytrimônio foi projetado para conferir o processo de calibração de equipamentos elétricos. Seu principal objetivo é minimizar erros após a calibração, garantindo precisão e eficiência no controle dos documentos. A ferramenta oferece um ambiente intuitivo e de fácil uso, contribuindo para a redução de falhas humanas.                   
+Para melhor entendimento, essa instrução pode ser visualizada no google docs com imagens: https://docs.google.com/document/d/1OnLFunyeDjnUxsWkOjyngKR4NOzn2mfYfOytgyfRo6k/edit?usp=sharing
 
 ## **Instalação**
 
