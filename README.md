@@ -39,25 +39,27 @@ O software Pytrimônio foi projetado para conferir o processo de calibração de
 A verificação é feita pegando todos os patrimônios que estão na planilha de CONTROLE DE EQUIPAMENTOS CALIBRÁVEIS, isso inclui a aba de equipamentos internos e externos. Com esses patrimônios o programa separa pelo tipo de equipamento e em sua respectiva pasta busca se todos os patrimônios desse equipamento estão listados na FICHA DE CONTROLE DE INSTRUMENTOS. Se tudo estiver coerente, então ele entra na pasta ATUAL do equipamento e procura todos os pdf 's. Esses arquivos devem ser nomeados com o nº de patrimônio. 
 Pastas verificadas:
 As pastas verificadas são:
-Para equipamentos internos:
 
-"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\INTERNA\MULTÍMETRO"
-"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\INTERNA\ALICATE AMPERIMETRO"
-"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\INTERNA\DISPLAY\DISPLAY VOLTÍMETRO AMPERÍMETRO"
-"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\INTERNA\DISPLAY\DISPLAY VOLTIMETRO DIGITAL"
-"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\INTERNA\JIGA - SAT - CARGA ELETRÔNICA\JIGA G01158"
-"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\INTERNA\JIGA - SAT - CARGA ELETRÔNICA\JIGA USB"
-"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\INTERNA\JIGA - SAT - CARGA ELETRÔNICA\SAT\FA350ATE"
-"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\INTERNA\JIGA - SAT - CARGA ELETRÔNICA\SAT\FA4200ATE"
+**Para equipamentos internos:**
 
-	Para equipamentos externos:
-"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\EXTERNO\MULTÍMETRO PADRÃO"
-"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\EXTERNO\ALICATE AMPERÍMETRO PADRÃO"
-"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\EXTERNO\PAQUÍMETRO"
-"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\EXTERNO\RESISTOR SHUNT"
-"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\EXTERNO\DIP TESTER"
+	"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\INTERNA\MULTÍMETRO"
+	"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\INTERNA\ALICATE AMPERIMETRO"
+	"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\INTERNA\DISPLAY\DISPLAY VOLTÍMETRO AMPERÍMETRO"
+	"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\INTERNA\DISPLAY\DISPLAY VOLTIMETRO DIGITAL"
+	"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\INTERNA\JIGA - SAT - CARGA ELETRÔNICA\JIGA G01158"
+	"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\INTERNA\JIGA - SAT - CARGA ELETRÔNICA\JIGA USB"
+	"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\INTERNA\JIGA - SAT - CARGA ELETRÔNICA\SAT\FA350ATE"
+	"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\INTERNA\JIGA - SAT - CARGA ELETRÔNICA\SAT\FA4200ATE"
 
-	Dentro dessas pastas são verificadas a pasta ATUAL e a FICHA DE CONTROLE DE INSTRUMENTOS.
+**Para equipamentos externos:**
+
+	"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\EXTERNO\MULTÍMETRO PADRÃO"
+	"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\EXTERNO\ALICATE AMPERÍMETRO PADRÃO"
+	"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\EXTERNO\PAQUÍMETRO"
+	"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\EXTERNO\RESISTOR SHUNT"
+	"\\servidor\desenv\DOCUMENTOS\CALIBRAÇÃO\EXTERNO\DIP TESTER"
+
+Dentro dessas pastas são verificadas a pasta ATUAL e a FICHA DE CONTROLE DE INSTRUMENTOS.
  # **IMPORTANTE**
   O programa NÃO verifica o que está nos pdf 's, portanto, é função do gestor conferir e assinar eletronicamente.
   A planilha  CONTROLE DE EQUIPAMENTOS CALIBRÁVEIS deve sempre estar atualizada com as informações certas, pois é de lá que as informações são retiradas.
