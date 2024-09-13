@@ -34,7 +34,7 @@ O software Pytrimônio foi projetado para conferir o processo de calibração de
 2. **Busca de Instrumentos**           
    Essa aba consiste na busca de informações básicas do instrumento de acordo com o patrimônio digitado pelo usuário. Ele busca todas as informações da planilha CONTROLE DE EQUIPAMENTOS CALIBRÁVEIS sem precisar abrir.
 ## **Informações adicionais**
-   Como funciona a verificação?
+   **Como funciona a verificação?**          
 A verificação é feita pegando todos os patrimônios que estão na planilha de CONTROLE DE EQUIPAMENTOS CALIBRÁVEIS, isso inclui a aba de equipamentos internos e externos. Com esses patrimônios o programa separa pelo tipo de equipamento e em sua respectiva pasta busca se todos os patrimônios desse equipamento estão listados na FICHA DE CONTROLE DE INSTRUMENTOS. Se tudo estiver coerente, então ele entra na pasta ATUAL do equipamento e procura todos os pdf 's. Esses arquivos devem ser nomeados com o nº de patrimônio. 
 Pastas verificadas:
 As pastas verificadas são:
